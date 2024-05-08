@@ -1,6 +1,6 @@
  # Data-Error Scaling in Machine Learning on Natural Discrete Combinatorial Mutation-prone Sets: Case Studies on Peptides and Small Molecules
 
- Data, Python scripts and Results (available free of charge on [Zenodo](), DOI:XXXXX) used in the publication entitled "Data-Error Scaling in Machine Learning on Natural Discrete Combinatorial Mutation-prone Sets: Case Studies on Peptides and Small Molecules" (--> [paper](), [preprint]()).
+ Data, Python scripts and Results (available free of charge on (DOI:[10.5281/zenodo.11148307](https://zenodo.org/doi/10.5281/zenodo.11148307)) used in the publication entitled "Data-Error Scaling in Machine Learning on Natural Discrete Combinatorial Mutation-prone Sets: Case Studies on Peptides and Small Molecules" (--> [paper](), [preprint]()).
 
  - [Overview](##Overview)
  - [Requirements](##Requirements)
@@ -88,7 +88,7 @@ Expected output (might be slightly different):
 ```
 
  ### Results (on Zenodo)
- This folder (available on [Zenodo](), DOI:XXXXX) contains the results (outputs) of the ML models trained using the provided scripts (see previous subsection). Such results are incuded in the form of `.npy` files. To load the files please include the option `allow_pickle=True`.
+ This folder (available on DOI:[10.5281/zenodo.11148307](https://zenodo.org/doi/10.5281/zenodo.11148307)) contains the results (outputs) of the ML models trained using the provided scripts (see previous subsection). Such results are incuded in the form of `.npy` files. To load the files please include the option `allow_pickle=True`.
 
  Each `.npy` file contains the following keys:
  * `initial_parameters`: script inputs.
@@ -119,7 +119,7 @@ By default, results are not exported when using a Darwin-based computer (MacOS).
 conda env create --file=environment.yml
 ```
 ### Note on qmlcode
-Some options (Coulomb Matrix based encoding) available in `Scripts/script_chemSpace.py`, require additionally the python library `qmlcode` ([website](http://qmlcode.org)) to be installed (not included in the `environment.yml`). To do that, one can follow the installation instruction provided on the qmlcode webpage ([installation guide](http://www.qmlcode.org/installation.html#)).
+Some options (Coulomb Matrix based encoding) available in `Scripts/script_chemSpace.py`, require additionally to install the python library `qmlcode` ([website](http://qmlcode.org), not included in the `environment.yml`). To do that, one can follow the installation instruction provided on the qmlcode webpage ([installation guide](http://www.qmlcode.org/installation.html#)).
 
 
 ## Citation
