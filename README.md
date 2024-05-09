@@ -1,6 +1,6 @@
  # Data-Error Scaling in Machine Learning on Natural Discrete Combinatorial Mutation-prone Sets: Case Studies on Peptides and Small Molecules
 
- Data, Python scripts and Results (available free of charge on (DOI:[10.5281/zenodo.11148307](https://zenodo.org/doi/10.5281/zenodo.11148307)) used in the publication entitled "Data-Error Scaling in Machine Learning on Natural Discrete Combinatorial Mutation-prone Sets: Case Studies on Peptides and Small Molecules" (--> [paper](), [preprint]()).
+ Data, Python scripts and Results (available free of charge on DOI:[10.5281/zenodo.11148307](https://zenodo.org/doi/10.5281/zenodo.11148307)) used in the publication entitled "Data-Error Scaling in Machine Learning on Natural Discrete Combinatorial Mutation-prone Sets: Case Studies on Peptides and Small Molecules" (--> [preprint](https://arxiv.org/abs/2405.05167)).
 
  - [Overview](##Overview)
  - [Requirements](##Requirements)
