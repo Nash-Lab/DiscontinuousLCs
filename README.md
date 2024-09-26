@@ -6,10 +6,15 @@
  - [Requirements](##Requirements)
  - [Citation](##Citation)
 
-
- ## Overview
  The files are generally separated based on the graph topology (molecules / peptides).
 
+ ## Overview
+
+Abstract: We investigate trends in the data-error scaling behavior of machine learning (ML) models trained on discrete combinatorial spaces that are prone-to-mutation, such as proteins or organic small molecules. We trained and evaluated kernel ridge regression machines using variable amounts of computationally generated training data. Our synthetic datasets comprise i) two naïve functions based on many-body theory; ii) binding energy estimates between a protein and a mutagenised peptide; and iii) solvation energies of two 6-heavy atom structural graphs. In contrast to typical data-error scaling, our results showed discontinuous monotonic phase transitions during learning, observed as rapid drops in the test error at particular thresholds of training data. We observed two learning regimes, which we call saturated and asymptotic decay, and found that they are conditioned by the level of complexity (i.e. number of mutations) enclosed in the training set. We show that during training on this class of problems, the predictions were clustered by the ML models employed in the calibration plots. Furthermore, we present  an alternative strategy to normalize learning curves (LCs) and the concept of mutant based shuffling. This work has implications for machine learning on mutagenisable discrete spaces such as chemical properties or protein phenotype prediction, and improves basic understanding of concepts in statistical learning theory. 
+
+
+![](F1.png)
+*Workflow overview. (A) Database Generation: a table containing all possible mutagenized peptide variants was generated from a starting construct (WT) and a mutational vocabulary. The response variable (binding energy) was computed for each entry. (B) Encoding: the database was converted into a matrix containing numerical values using binary flattened one hot encoding. (C) Machine learning: Laplacian kernel machines were trained using different quantities of data and different shuffling strategies. (D) Evaluation: LCs and calibration plots were used to study the learning process. The amount of information used during training in the scatter plots is reported on the figure.*
  ### Data (zipped and on Zenodo)
  This folder contains the raw data used during this work.
  `out_seq_total.txt` contains information on the sequences used (mutations, number of mutations, etc.). `output_energies_total.txt` contains the response variables, which include: a) unrelaxed EvoEF energies (peptides); b) relaxed EvoEF energies (peptides, `*_repaired.txt`); and c) solvation energies (molecules).
