@@ -218,6 +218,9 @@ if (data == 'linear_cyclic')|(data == 'linear+cyclic'):
 
 if encoding=='ohe':
     a=x_ohe_flatten.copy()
+elif encoding=='ecfp':
+    df_temp = pd.read_csv(prefix+'ECFP4.csv',index_col=0, header=None)
+    a = df_temp.loc[df_modified.sequence.values].values
 else:
     from qml import Compound
     from qml.representations import *
